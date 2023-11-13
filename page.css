@@ -1,199 +1,704 @@
 
-  body{
+body{
 
-    top: 0px;
-    left: 0px;
-    width: 1920px;
-    height: 3006px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    opacity: 1;
-  }
+  top: 0px;
+  left: 0px;
+  width: 1920px;
+  height: 3006px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
 
-  body::before {
-    content: ""; /* 伪元素需要设置 content 属性 */
-    display: block; /* 将伪元素设置为块级元素，以使其占据一定的空间 */
-    position: absolute; /* 使用绝对定位，以覆盖整个 body 区域 */
-    z-index: -1; /*将伪元素放在 body 的底层 */
+.block{
 
-    top: 1274px;
-    left: 0px;
-    width: 1920px;
-    height: 460px;
-    background: #415165 0% 0% no-repeat padding-box;
-    opacity: 1;
+  top: 1274px;
+  left: 0px;
+  width: 1920px;
+  height:500px;
+  background: #415165 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.block1{
+  /* Layout Properties */
+  top: 2606px;
+  left: 0px;
+  width: 1920px;
+  height: 400px;
+  /* UI Properties */
+  background: #415165 0% 0% no-repeat padding-box;
+  opacity: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column;
+ 
+
+}
+
+.block span {
+  position: relative; /* 相对定位，使文本相对于伪元素定位 */
+  z-index: 1; /* 放在伪元素上层 */
+  text-align: center; /* 文本居中对齐 */
+  margin-top:24px; /* 调整文本位置，根据需要修改 */
 }
 
 
+
+
+
+.resume {
+  margin-top: 40px;
+  margin-left: 360px;
+  margin-right: 360px;
+}
+
+
+
+/* 複寫區 */
+h1{
+  top: 40px;
+  left: 360px;
+  width: 274px;
+  height: 190px;
+  /* margin-bottom: 24px; */
+  text-align: left;
+  font: normal normal normal 80px/95px SF Pro Text;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+
+}
+
+
+
+.h2{
+  top: 674px;
+  left: 360px;
+  width: 128px;
+  height: 48px;
+  text-align: left;
+  font: normal normal medium 32px/48px PingFang TC;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.h3{
+  /* Layout Properties */
+  top: 680px;
+  left: 504px;
+  width: 101px;
+  height: 36px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal 600 24px/36px SF Pro Text;
+  letter-spacing: 0px;
+  color: #A00404;
+  opacity: 1;
+}
+
+hr{
+  top: 254px;
+  left: 360px;
+  width: 1200px;
+  height: 0px;
+  border: 2px solid #000000;
+  opacity: 1;
+}
+.hr2{
+  top: 730px;
+  left: 360px;
+  width: 1200px;
+  height: 0px;
+  border: 1px solid #000000;
+  opacity: 1;
+}
+
+.hr3{
+  left: 462px;
+  width: 996px;
+  height: 0px;
+  border: 1px solid #FFFFFF;
+  opacity: 1;
+}
+
+.hr4{
+
+  top: 1394px;
+  left: 852px;
+  width: 1px;
+  height: 300px;
+  border: 1px solid #96A9C4;
+  opacity: 1;
+}
+
+.hr5{
+  /* Layout Properties */
+  top: 1854px;
+  left: 360px;
+  width: 1200px;
+  height: 0px;
+  /* UI Properties */
+  border: 1px solid #000000;
+  opacity: 1;
+}
+
+
+
+li{
+  list-style: "none";
   
-  .resume {
-    margin-top: 40px;
-    margin-left: 360px;
-    margin-right: 360px;
-  }
+}
 
-  
+.hr6{
+  list-style: "none";
+}
 
-  /* 複寫區 */
-  h1{
-    top: 40px;
-    left: 360px;
-    width: 274px;
-    height: 190px;
-    /* margin-bottom: 24px; */
-    text-align: left;
-    font: normal normal normal 80px/95px SF Pro Text;
-    letter-spacing: 0px;
-    color: #000000;
-    opacity: 1;
-
-  }
-
-
-
-  .h2{
-    /* UI Properties */
-    text-align: left;
-    font: normal normal medium 32px/48px PingFang TC;
-    letter-spacing: 0px;
-    color: #000000;
-    opacity: 1;
-  }
-
-  .h3{
-
-    /* UI Properties */
-    text-align: left;
-    font: normal normal 600 24px/36px SF Pro Text;
-    letter-spacing: 0px;
-    color: #A00404;
-    opacity: 1;
-  }
-
-  hr{
-    top: 254px;
-    left: 360px;
-    width: 1200px;
-    height: 0px;
-    border: 2px solid #000000;
-    opacity: 1;
-  }
-
-
-
-  image{
-    top: 302px;
-    left: 360px;
-    width: 324px;
-    height: 324px;
-    background: transparent url('img/photo-1536180931879-fd2d652efddc.png') 0% 0% no-repeat padding-box;
-    opacity: 1;
-  }
-    
-    
-
-  h4{
-    top: 1050px;
-    left: 360px;
-    width: 64px;
-    height: 48px;
-    text-align: left;
-    font: normal normal medium 32px/48px PingFang TC;
-    letter-spacing: 0px;
-    color: #000000;
-    opacity: 1;
-  } */
-
-  h5{
-    /* Layout Properties */
-    top: 1056px;
-    left: 440px;
-    width: 143px;
-    height: 36px;
-    /* UI Properties */
-    text-align: left;
-    font: normal normal 600 24px/36px SF Pro Text;
-    letter-spacing: 0px;
-    color: #A00404;
-    opacity: 1;
-  }
-
-  
-
-  .p1{
-    padding-bottom: 24px;
-    padding-top: 16px;
-    top: 746px;
-    left: 360px;
-    width: 439px;
-    height: 108px;
-    text-align: left;
-    font: normal normal 300 24px/36px PingFang TC;
-    letter-spacing: 0px;
-    color: #000000;
-    opacity: 1;
-    
-  }
-
-  .p2{
-    /* Layout Properties */
-    top: 878px;
-    left: 360px;
-    width: 696px;
-    height: 108px;
-    /* UI Properties */
-    text-align: left;
-    font: normal normal 300 24px/36px PingFang TC;
-    letter-spacing: 0px;
-    color: #000000;
-    opacity: 1;
-  }
-
-  .p3{
-    /* Layout Properties */
-    top: 1122px;
-    left: 360px;
-    width: 603px;
-    height: 36px;
-    /* UI Properties */
-    text-align: left;
-    font: normal normal 300 24px/36px PingFang TC;
-    letter-spacing: 0px;
-    color: #000000;
-    opacity: 1;
-  }
-
-  .p4{
-    /* Layout Properties */
-    top: 1174px;
-    left: 360px;
-    width: 422px;
-    height: 36px;
-    /* UI Properties */
-    text-align: left;
-    font: normal normal 300 24px/36px PingFang TC;
-    letter-spacing: 0px;
-    color: #000000;
-    opacity: 1;
-  }
-
-  .photo{
-    margin-bottom: 48px;
-    margin-top: 48px;
-  }
-
-  block{
-    /* Layout Properties */
-    top: 1274px;
-    left: 0px;
-    width: 1920px;
-    height: 460px;
-    /* UI Properties */
-    background: #415165 0% 0% no-repeat padding-box;
-    opacity: 1;
-  }
-
-
-
+.hr6::before{
+  top: 1870px;
+  left: 384px;
+  width: 0px;
+  height: 654px;
+  border: 1px solid #96A9C4;
+  opacity: 1; 
   
 
+}
+
+
+
+
+
+image{
+  top: 302px;
+  left: 360px;
+  width: 324px;
+  height: 324px;
+  background: transparent url('img/photo-1536180931879-fd2d652efddc.png') 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
   
+  
+
+.h4{
+  top: 1050px;
+  left: 360px;
+  width: 64px;
+  height: 48px;
+  text-align: left;
+  font: normal normal medium 32px/48px PingFang TC;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+} 
+
+.h5{
+  /* Layout Properties */
+  top: 1056px;
+  left: 440px;
+  width: 143px;
+  height: 36px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal 600 24px/36px SF Pro Text;
+  letter-spacing: 0px;
+  color: #A00404;
+  opacity: 1;
+}
+
+.h6{
+  top: 1298px;
+  left: 882px;
+  width: 64px;
+  height: 48px;
+  text-align: left;
+  font: normal normal medium 32px/48px PingFang TC;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  font-size: 32px;
+}
+
+.h7{
+  top: 1304px;
+  left: 962px;
+  width: 84px;
+  height: 36px;
+  text-align: left;
+  font: normal normal 600 24px/36px SF Pro Text;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+.h8{
+  /* Layout Properties */
+  top: 1798px;
+  left: 360px;
+  width: 128px;
+  height: 48px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal medium 32px/48px PingFang TC;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.h9{
+  /* Layout Properties */
+  top: 1804px;
+  left: 504px;
+  width: 233px;
+  height: 36px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal 600 24px/36px SF Pro Text;
+  letter-spacing: 0px;
+  color: #A00404;
+  opacity: 1;
+}
+.h10{
+  top: 2630px;
+  left: 782px;
+  width: 128px;
+  height: 48px;
+  text-align: left;
+  font-size: normal normal medium 32px/48px PingFang TC;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  font-size: 32px;
+
+}
+.h11{
+  top: 2636px;
+  left: 926px;
+  width: 228px;
+  height: 36px;
+  text-align: left;
+  font: normal normal medium 24px/36px SF Pro Text;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+}
+
+
+
+.p1{
+  /* Layout Properties */
+  top: 746px;
+  left: 360px;
+  width: 439px;
+  height: 108px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal 300 24px/36px PingFang TC;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  
+}
+
+.p2{
+  /* Layout Properties */
+  top: 878px;
+  left: 360px;
+  width: 696px;
+  height: 108px;
+  margin-bottom: 64px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal 300 24px/36px PingFang TC;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.p3{
+  /* Layout Properties */
+  top: 1122px;
+  left: 360px;
+  width: 603px;
+  height: 36px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal 300 24px/36px PingFang TC;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.p4{
+  /* Layout Properties */
+  top: 1174px;
+  left: 360px;
+  width: 422px;
+  height: 36px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal 300 24px/36px PingFang TC;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.p5{
+  top: 1870px;
+  left: 408px;
+  width: 509px;
+  height: 36px;
+  text-align: left;
+  font: normal normal medium 24px/36px PingFa
+  
+}
+
+.p6{
+  top: 2006px;
+  left: 408px;
+  width: 642px;
+  height: 150px;
+  text-align: left;
+  font: normal normal 300 20px/30px PingFang TC;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+.p7{
+  top: 2180px;
+  left: 408px;
+  width: 377px;
+  height: 36px;
+  text-align: left;
+  font: normal normal medium 24px/36px PingFang TC;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+.p8{
+  top: 2240px;
+  left: 408px;
+  width: 370px;
+  height: 36px;
+  text-align: left;
+  font: normal normal medium 24px/36px PingFang TC;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+.p9{
+  top: 2300px;
+  left: 408px;
+  width: 467px;
+  height: 36px;
+  text-align: left;
+  font: normal normal medium 24px/36px PingFang TC;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.p10{
+  top: 2360px;
+  left: 408px;
+  width: 423px;
+  height: 36px;
+  text-align: left;
+  font: normal normal medium 24px/36px PingFang TC;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.p11{
+  top: 2496px;
+  left: 408px;
+  width: 400px;
+  height: 30px;
+  text-align: left;
+  font: normal normal 300 20px/30px PingFang TC;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+.p12{
+  top: 1394px;
+  left: 876px;
+  width: 200px;
+  height: 36px;
+  text-align: center;
+  font: normal normal 300 24px/36px SF Pro Text;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  text-align: left;
+}
+.p13{
+  top: 1438px;
+  left: 875px;
+  width: 186px;
+  height: 36px;
+  text-align: center;
+  font: normal normal 300 24px/36px SF Pro Text;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  text-align: left;
+}
+
+.p14{
+  top: 1482px;
+  left: 875px;
+  width: 114px;
+  height: 36px;
+  text-align: center;
+  font: normal normal 300 24px/36px SF Pro Text;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  text-align: left;
+}
+.p15{
+  top: 1526px;
+  left: 875px;
+  width: 176px;
+  height: 36px;
+  text-align: center;
+  font: normal normal 300 24px/36px SF Pro Text;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  text-align: left;
+}
+
+.p16{
+  top: 1570px;
+  left: 876px;
+  width: 50px;
+  height: 36px;
+  text-align: center;
+  font: normal normal 300 24px/36px SF Pro Text;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  text-align: left;
+}
+
+.p17{
+  top: 1614px;
+  left: 875px;
+  width: 180px;
+  height: 36px;
+  text-align: center;
+  font: normal normal 300 24px/36px SF Pro Text;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  text-align: left;
+}
+
+.p18{
+  top: 1658px;
+  left: 876px;
+  width: 192px;
+  height: 36px;
+  text-align: center;
+  font: normal normal 300 24px/36px PingFang TC;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  text-align: left;
+}
+
+.p19{
+  top: 2710px;
+  left: 810px;
+  width: 311px;
+  height: 36px;
+  text-align: left;
+  font: normal normal 300 24px/36px SF Pro Text;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  text-align:center; /* 设置单元格内的文本垂直居中对齐 */
+  padding: 10px; /* 设置单元格内边距，可根据需要调整 */
+  
+}
+
+.p20{
+  top: 2762px;
+  left: 847px;
+  width: 236px;
+  height: 36px;
+  text-align: left;
+  font: normal normal 300 24px/36px SF Pro Text;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  text-align: center;
+}
+
+
+.p21{
+  top: 2814px;
+  left: 857px;
+  width: 207px;
+  height: 36px;
+  text-align: left;
+  font: normal normal 300 24px/36px SF Pro Text;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  text-align: center;
+}
+
+.p22{
+  top: 2866px;
+  left: 696px;
+  width: 530px;
+  height: 36px;
+  text-align: left;
+  font: normal normal 300 24px/36px PingFang TC;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  text-align: center;
+}
+
+
+.photo{
+  margin-bottom: 48px;
+  margin-top: 48px;
+}
+.photo1{
+  top: 1906px;
+  left: 408px;
+  width: 100px;
+  height: 100px;
+  background: transparent url('img/Group 6.png') 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.photo2{
+  top: 2396px;
+  left: 408px;
+  width: 100px;
+  height: 100px;
+  background: transparent url('img/Group 7.png') 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.photo3{
+  top: 2918px;
+  left: 864px;
+  width: 48px;
+  height: 48px;
+  background: transparent url('img/facebook.png') 0% 0% no-repeat padding-box;
+  opacity: 1;
+  text-align: center;
+  padding: 0;
+  
+}
+.photo4{
+  top: 2918px;
+  left: 936px;
+  width: 48px;
+  height: 48px;
+  background: transparent url('img/instagram-alt.png') 0% 0% no-repeat padding-box;
+  opacity: 1;
+  text-align: center;
+  padding: 0;
+}
+
+.photo5{
+  
+  top: 2918px;
+  left: 1008px;
+  width: 48px;
+  height: 48px;
+  background: transparent url('img/line.png') 0% 0% no-repeat padding-box;
+  opacity: 1;
+  text-align: center;
+  padding: 0;
+}
+
+ul{
+  
+  list-style: none;
+}
+
+
+.skill_table{
+padding-left: 24px;
+top: 1394px;
+left: 852px;
+width: 1px;
+height: 300px;
+border-left: 1px solid #96A9C4;
+opacity: 1;
+}
+
+.skill{
+padding-left: 24px;
+top: 1394px;
+left: 852px;
+width: 1px;
+height: 48px;
+opacity: 1;
+}
+
+.skill td {
+width: 0px;
+}
+
+
+
+.work_table{
+padding-left: 24px;
+top: 1870px;
+left: 384px;
+width: 0px;
+height: 654px;
+border-left: 1px solid #96A9C4;
+opacity: 1;
+}
+
+.final_table{
+top: 2686px;
+left: 360px;
+width: 1920px;
+height: 320px;
+border-top: 1px solid #FFFFFF;
+opacity: 1;
+
+border-collapse: separate;
+border-spacing: 3px;
+
+
+
+}
+
+.top, .bottom{
+display: flex;
+}
+
+.top{
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.bottom{
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.contact{
+top: 2630px;
+left: 782px;
+width: 372px;
+height: 48px;
+opacity: 1;
+}
